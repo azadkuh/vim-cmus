@@ -56,7 +56,7 @@ def runCommand(command):
 
 def parseCmusStdout(arguments):
     tags    = {'artist':'', 'album':'', 'title':'', 'track':'', 'date':''}
-    command = ['/usr/local/bin/cmus-remote'] + arguments
+    command = ['cmus-remote'] + arguments
     proc    = subprocess.Popen(command, stdout=subprocess.PIPE)
     for line in iter(proc.stdout.readline, b''):
         match = re.match(r'^tag artist\s+(.*)\s+$', line, re.M|re.I)
