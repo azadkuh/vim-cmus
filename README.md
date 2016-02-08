@@ -4,6 +4,7 @@ vim-cmus: control [cmus](https://cmus.github.io/) music player directly from vim
 `cmus` is a small, fast, **No Nonsense** and powerful console music player for Unix-like operating systems.
 
 This plugin helps you to control cmus right from your vim/gvim/macvim.
+
 `vim-cmus` requires python (2.7 or higher) to operate.
 
 
@@ -29,9 +30,9 @@ nnoremap <leader>b :CmusNext<cr>
 ```
 
 ## optional bidi
-**Optionally**, if your music collection contains unicode names esp in RTL (right to left) languages as Persian, Hebrew or Arabic, please install [pyfribidi](https://pypi.python.org/pypi/pyfribidi/), to help `vim-cmus` render bi-directional text (where the cmus itself fails to render them properlyi! as shown in the sample screen cast)
+**Optionally**, if your music collection contains unicode strings esp in RTL (right to left) languages as Persian, Hebrew, Arabic, ... please install [pyfribidi](https://pypi.python.org/pypi/pyfribidi/) to help `vim-cmus` render bi-directional text (where the cmus itself fails to render them properly! as shown in the sample screen cast)
 
-Install `pyfribidi` by:
+to Install `pyfribidi`:
 ```bash
 $> sudo pip install pyfribidi
 ```
