@@ -42,7 +42,7 @@ function! Cmus()
                 \ "i. information\n"
                 \ "z. previous\n x. play\n c. pause\n"
                 \ "v. stop\n b. next\n"
-                \ "a. all mode\n t. artist mode\n m. album mode\n"
+                \ "l. play all mode\n t. play artist mode\n m. play album mode\n"
     let opt = nr2char(getchar())
     if opt == 'i'
         call s:call_python('curr')
