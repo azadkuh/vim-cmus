@@ -96,7 +96,7 @@ def makeTaggedStatus():
 
     statusMessage += u' \u266b  {t[track]}{t[title]}'.format(t=tags)
 
-    print(statusMessage)
+    print(statusMessage.encode('utf-8'))
 
 
 #------------------------------------------------------------------------------
