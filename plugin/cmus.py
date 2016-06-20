@@ -99,13 +99,13 @@ class Remote():
             self.tags['album']  = visualizeIfUnicode(self.tags['album'])
             self.tags['title']  = visualizeIfUnicode(self.tags['title'])
 
-        statusMessage = u'\u266a {t[status]}: {t[artist]} '.format(t=self.tags)
+        statusMessage = u'\u266a' + ' {t[status]}: {t[artist]}  '.format(t=self.tags).decode('utf-8')
         if self.tags['album']:
-            statusMessage += u' \u266c  {t[album]}{t[date]} '.format(t=self.tags)
+            statusMessage += u'\u266c' + ' {t[album]}{t[date]}  '.format(t=self.tags).decode('utf-8')
 
-        statusMessage += u' \u266b  {t[track]}{t[title]}'.format(t=self.tags)
+        statusMessage += u'\u266b' + ' {t[track]}{t[title]}'.format(t=self.tags).decode('utf-8')
 
-        print(statusMessage.encode('utf-8'))
+        print(statusMessage)
 
 
 #------------------------------------------------------------------------------
