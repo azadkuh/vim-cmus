@@ -31,6 +31,7 @@ or current **stream** playing by *cmus*:
 ![vim-cmus](https://user-images.githubusercontent.com/6501462/43317590-9cb2335e-91b2-11e8-877b-8a62f2d595ee.png)
 
 or
+
 ![vim-cmus](https://user-images.githubusercontent.com/6501462/43317598-a620ded6-91b2-11e8-8df3-03bbc059505b.png)
 
 
@@ -88,4 +89,8 @@ nnoremap <leader>b :CmusNext<cr>
 there is another sister project
 [`cmus-osx`](https://github.com/azadkuh/cmus-osx) who integrates *cmus* into
 `MacOS` notification menu and captures **Fn** music keys.
+
+
+# License
+MIT license - see [license](./LICENSE) for more details.
 
